@@ -10,4 +10,4 @@ __pycache__/
 *.tfstate.backup
 .terraform/
 ~/.aws/
-terraform.lock.hcl
+Infra/.terraform.lock.hcl
