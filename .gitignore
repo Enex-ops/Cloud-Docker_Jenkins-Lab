@@ -1,0 +1,13 @@
+.DS_Store
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.tfstate
+*.tfvars
+*.tfstate.backup
+.terraform/
+~/.aws/
+terraform.lock.hcl
