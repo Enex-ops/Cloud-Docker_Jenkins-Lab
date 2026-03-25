@@ -8,12 +8,11 @@ terraform {
   }
 }
 
-resource "aws_ec2_host" "webapp_host" {
-  availability_zone = "ap-southeast-2"
-  instance_type     = "m3.micro"
-  auto_placement    = "on"
+locals {
+  aws_region = "ap-southeast-2"
+  
+}
 
-  tags = {
-    Name = "WebApp Host"
-  }
+provider "aws" {
+  region = locals.aws_region
 }
